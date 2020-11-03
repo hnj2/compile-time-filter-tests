@@ -2,7 +2,7 @@
 
 A collection of tests for the [`compile_time_filters`] feature for the [rust-lang/log] crate.
 
-To test the [`compile_time_filtes`] feature yourself, you'll need to change the `Cargo.toml` of your application along these lines:
+To test the [`compile_time_filters`] feature yourself, you'll need to change the `Cargo.toml` of your application along these lines:
 ```diff
  ...
 

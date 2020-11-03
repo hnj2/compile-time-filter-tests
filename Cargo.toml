@@ -1,0 +1,9 @@
+[patch.crates-io]
+# patches the log crate in all dependencies
+log = { git = "https://github.com/hnj2/log.git", branch = "compile-time-filters" }
+
+[workspace]
+members = [
+    "actix",
+    "assembly",
+]

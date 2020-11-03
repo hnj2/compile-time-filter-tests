@@ -225,6 +225,9 @@ $ env RUST_LOG_FILTERS="Info; actix_server::worker=Trace" cargo run --bin actix
 Using clean and build every time you want to change the compile time configuration is annoying.
 But at least it drives the point home, that this feature should only be used if it is really really necessary!
 
+An alternative would be to use a proc macro for every `log::log` macro invocation ... this would mean that the enironment at the compilation of the module that uses `log::*` counts.
+Right now the environment at the compuilation of the `log` crate counts.
+
 Notice the ugly `incomplete_featues` warning every time you compile this crate.
 I know a way around using the `const_generics` feature.
 It would be to generate the string prefix functions with the proc macro, but it is kind of ugly.
